@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	overflow-x: hidden;
+	background-color: rgb(114, 114, 114);
+	padding: 40px;
+}
+.wrapper {
+	min-height: 100%;
+}
+
+/* ------------------------------ */
+
+.header {
+	font-size: 40px;
+}
+
+.main {
+	padding: 100px 200px;
+	font-style: italic;
+}
+
+.car {
+	display: inline-table;
+}
+
+.cabin {
+	display: inline-block;
+}
+
+.cabin__real {
+	width: 320px;
+	height: 480px;
+	background: red;
+	border-radius: 180px 15px 15px 17px;
+	position: relative;
+	border: 3px solid black;
+}
+
+.cabin__real::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 60px;
+	background: rgb(190, 224, 240);
+	border: 2px solid black;
+	position: absolute;
+	top: 300px;
+	border-radius: 0px 7px 7px 0px;
+	box-shadow: -50px 3px 25px 20px rgb(223, 235, 247);
+}
+
+.cabin__real:hover::before {
+	transform: scale(1.4) rotate(-10deg);
+	background: rgb(114, 204, 240);
+	box-shadow: -80px 5px 15px 30px rgb(239, 243, 206);
+}
+
+.cabin__door {
+	width: 150px;
+	height: 320px;
+	background: red;
+	border-radius: 10px;
+	position: relative;
+	left: 150px;
+	top: 100px;
+	border: 3px solid black;
+}
+
+.cabin__door::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 10px;
+	border-radius: 3px 10px 10px 3px;
+	background: rgb(126, 7, 7);
+	position: absolute;
+	top: 180px;
+	left: 110px;
+}
+
+.cabin__door::after {
+	content: "";
+	display: inline-block;
+	width: 120px;
+	height: 140px;
+	border-radius: 5px;
+	background: linear-gradient(0deg, rgb(221, 235, 241) 39%, rgb(9, 155, 240));
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.cabin__bamper {
+	width: 80px;
+	height: 45px;
+	background: black;
+	border-radius: 5px;
+	position: relative;
+	right: 10px;
+	bottom: -85px;
+}
+
+.base {
+	position: relative;
+}
+
+.base__center {
+	width: 1000px;
+	height: 70px;
+	background: rgb(138, 135, 114);
+	border-radius: 5px;
+	position: relative;
+}
+
+.base__center::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 40px;
+	background: red;
+	position: relative;
+	left: 1000px;
+	bottom: 85px;
+	border-radius: 0px 3px 3px 0px;
+	box-shadow: 20px 3px 25px 10px rgb(245, 179, 177);
+}
+
+.base__center:hover::before {
+	transform: scale(1.4) rotate(10deg);
+	background: rgb(100, 8, 8);
+	box-shadow: 40px 5px 15px 30px rgb(228, 111, 111);
+}
+
+.wheel1 {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background-color: rgb(179, 179, 179);
+	border-radius: 50%;
+	position: relative;
+	top: 20px;
+	left: 70px;
+	border: 20px solid black;
+}
+
+.wheel2 {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background-color: rgb(179, 179, 179);
+	border-radius: 50%;
+	position: relative;
+	top: 20px;
+	left: 470px;
+	border: 20px solid black;
+}
+
+.wheel3 {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background-color: rgb(179, 179, 179);
+	border-radius: 50%;
+	position: relative;
+	top: 20px;
+	left: 500px;
+	border: 20px solid black;
+}
+
+.body {
+	position: relative;
+	left: 330px;
+	bottom: 400px;
+}
+
+.body__top {
+	width: 720px;
+	height: 320px;
+	background: #ec9c51;
+	border: 3px solid rgba(17, 17, 17, 1);
+	border-radius: 5px 5px 60px 5px;
+	position: relative;
+}
+
+.body__text {
+	font-family: "Roboto", serif;
+	font-size: 80px;
+}
+
+.body__text_yellow {
+	color: yellow;
+	position: absolute;
+	font-style: oblique;
+	top: 80px;
+	left: 100px;
+	transform: rotate(-10deg);
+}
+
+.body__text_gray {
+	color: gray;
+	font-style: italic;
+	position: absolute;
+	top: 80px;
+	left: 400px;
+	transform: rotate(10deg);
+}
+
+.body__text_brown {
+	color: brown;
+	font-family: "Arial", serif;
+	position: absolute;
+	top: 180px;
+	left: 250px;
+}
